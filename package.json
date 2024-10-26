@@ -18,11 +18,15 @@
   },
   "scripts": {
     "prepare": "husky",
-    "lint": "eslint . --config .config/eslint/.eslintrc.json",
-    "lint:fix": "eslint . --fix --config .config/eslint/.eslintrc.json",
-    "prettier": "prettier --check . --config .config/prettier/.prettierrc",
-    "prettier:fix": "prettier --write . --config .config/prettier/.prettierrc",
-    "commitlint": "commitlint --config .config/commitlint/commitlint.config.js",
-    "release": "semantic-release"
+    "lint": "eslint . --config .config/.eslint/.eslintrc.json",
+    "lint:fix": "eslint . --fix --config .config/.eslint/.eslintrc.json",
+    "prettier": "prettier --check . --config .config/.prettier/.prettierrc",
+    "prettier:fix": "prettier --write . --config .config/.prettier/.prettierrc",
+    "commitlint": "commitlint --config .config/.commitlint/commitlint.config.js",
+    "release": "semantic-release",
+
+    "build": "webpack --config webpack.config.js",
+    "start": "node dist/bundle.js",
+    "dev": "webpack --config webpack.config.js --mode development --watch"
 }
 }
