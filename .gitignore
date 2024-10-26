@@ -1,0 +1,37 @@
+# Node modules
+node_modules/
+
+#For local overrides:
+.prettierrc.local
+.eslintrc.local.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.idea/
+.vscode/
+*.swp
+
+# Build directories
+dist/
+build/
+
+# Local configuration overrides (for Prettier/ESLint customizations)
+.prettierrc.local
+.eslintrc.local.json
+
+# Generated files (e.g., changelog)
+CHANGELOG.md
